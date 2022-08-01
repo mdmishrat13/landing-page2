@@ -1,0 +1,160 @@
+.team{
+    color: white;
+}
+.team-title{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    text-align: center;
+    position: relative;
+}
+.section-image{
+    max-width: 400px;
+    height: 110px;
+    text-align: center;
+    
+}
+.texts{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+.texts>h1{
+    font-size: 50px;
+    color: #00FF8E;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+    margin: 5px;
+}
+
+.texts>h2{
+    font-family: 'Comfortaa', cursive;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+.team-cards{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.team-card{
+    height: 350px;
+    text-align: center;
+    position: relative;
+
+}
+.team-card>img{
+    width: 100%;
+}
+
+.main-identity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    width: 100px;
+    height: 120px;
+    margin: -100px 20px 0 10px;
+}
+
+.card-content{
+    text-align: left;
+    top: 20px;
+    padding: 10px;
+    position: absolute;
+}
+.main-identity>h2{
+    color: #00FF8E;
+    font-weight:700;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;;
+}
+.card-content>p{
+    margin-top: 20px;
+    color: #F1F1F1;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+}
+.card-content>h2{
+    margin-top: 30px;
+    font-family: 'Comfortaa',sans-serif;
+    color: #F1F1F1;
+    font-size: 22px;
+    padding: 10px;
+}
+.team-section{
+    margin: 100px 0;
+}
+.team-section>img{
+max-width: 100%;
+}
+
+.contact-icons{
+    position: absolute;
+    bottom:25px;
+    right: 20px;
+    color: #F1F1F1;
+
+}
+
+
+/* responsive  */
+
+
+@media only screen and (max-width: 1100px) {
+    .team-card>img{
+        height: 370px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .team-card>img{
+        height: 410px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .team-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-card{
+        height: 350px;
+        width: 300px;
+        margin-top: 50px; 
+        margin-bottom: 70px;   
+    }
+    .card-content>p{
+        font-size: 16px;
+        
+    }
+    .card-content>h2{
+        margin-top: 75px;
+    }
+    .team-card>img{
+    }
+    .texts>h1{
+        font-size: 34px;
+    }
+    .texts>p{
+        font-size: 34px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .section-image{
+        max-width: 277px;
+        height: 75px;
+        text-align: center;
+        
+    }
+    .team-cards{
+        grid-template-columns: 1fr;
+    }
+    .nav-items{
+        display: none;
+    }
+}
